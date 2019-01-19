@@ -1,0 +1,25 @@
+{
+  "name": "comp308-w2019-lesson1C",
+  "version": "1.0.0",
+  "description": "First Code comp308",
+  "main": "index.js",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "popper.js": "^1.14.6",
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "!test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "comp308-w2019"
+  },
+  "keywords": [
+    "comp308-w2019"
+  ],
+  "author": "Harvey",
+  "license": "ISC"
+}
