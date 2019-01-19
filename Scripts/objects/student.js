@@ -13,39 +13,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var objects;
 (function (objects) {
-    var Person = /** @class */ (function () {
-        function Person(age, name) {
-            this._age = age;
-            this._name = name;
-        }
-        Object.defineProperty(Person.prototype, "name", {
-            //public properies
-            get: function () {
-                return this._name;
-            },
-            set: function (newName) {
-                this._name = newName;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Person.prototype, "age", {
-            get: function () {
-                return this._age;
-            },
-            set: function (newAge) {
-                this._age = newAge;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        //private methods
-        //public methods
-        Person.prototype.saysHello = function () {
-            console.log("%c " + this.name + " says hello", "font-size: 20px; color:blue; font-weight:bold;");
-        };
-        return Person;
-    }());
     var Student = /** @class */ (function (_super) {
         __extends(Student, _super);
         //constructor
@@ -71,14 +38,7 @@ var objects;
             console.log("%c " + this.name + " is studying and has a studentID of " + this.studentID, "font-size: 18px; color:green;");
         };
         return Student;
-    }(Person));
+    }(objects.Person));
+    objects.Student = Student;
 })(objects || (objects = {}));
-/*
-const person = new Person(30, "Tom");
-person.saysHello();
-*/
-var student;
-student = new objects.Student(20, "David", "D123456789");
-student.saysHello();
-student.studies();
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=student.js.map
